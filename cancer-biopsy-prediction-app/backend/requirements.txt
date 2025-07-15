@@ -1,7 +1,5 @@
-Flask==2.3.2
-pymongo
+flask
 flask-cors
-scikit-learn==1.6.1
-
-pandas
 joblib
+pandas
+pymongo
