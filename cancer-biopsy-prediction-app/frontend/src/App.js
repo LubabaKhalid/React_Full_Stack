@@ -6,7 +6,7 @@ import "./mainstyle.css";
 function App() {
   return (
     <div className="app-container">
-      <h1>Cervical Cancer Biopsy Prediction</h1>
+      
       <PredictionForm />
     </div>
   );
