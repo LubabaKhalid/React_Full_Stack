@@ -24,12 +24,13 @@ except Exception as e:
 
 # MongoDB setup
 try:
-   
-    mongo_url = os.getenv("MONGO_URL", "mongodb://localhost:27017/")
+    mongo_url = "mongodb+srv://lubabalubaba815:fcit123%2A%23@nexium-mongo.jyskrvu.mongodb.net/biopsy_db?retryWrites=true&w=majority"
+
     client = MongoClient(mongo_url)
 
     db = client['biopsy_db']
     predictions_col = db['predictions']
+    client.server_info()
     print("✅ Connected to MongoDB.")
 except Exception as e:
     print("❌ MongoDB connection failed:", str(e))
