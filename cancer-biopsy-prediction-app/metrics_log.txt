@@ -1,0 +1,2 @@
+Logistic Regression F-beta: 0.7272727272727272
+Random Forest F-beta: 0.38795986622073586

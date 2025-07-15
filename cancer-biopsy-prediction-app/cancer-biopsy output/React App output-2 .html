@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App output-2 _files/bundle.js.download"></script><style>body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 20px;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.result-card {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #28a745;
+  border-left: 5px solid #28a745;
+  background: #e6ffed;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+/* mainstyle.css */
+
+button[type="submit"] {
+  background-color: #28a745;           /* Bootstrap-like success green */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+  transform: translateY(-1px);
+}
+
+button[type="submit"]:active {
+  transform: translateY(1px);
+}
+/* Center the app container and add padding */
+.app-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Smooth hover animation for entire app */
+.app-container:hover {
+  transform: scale(1.01);
+}
+
+/* Beautiful centered heading */
+.app-container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #343a40;
+  font-weight: 700;
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
+}
+
+/* Slight color change on hover for the heading */
+.app-container:hover h1 {
+  color: #007bff;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tYWluc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsbUNBQW1DO0VBQ25DLHlCQUF5QjtFQUN6QixTQUFTO0VBQ1QsYUFBYTtBQUNmOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYixzQ0FBc0M7QUFDeEM7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGVBQWU7RUFDZixzQkFBc0I7RUFDdEIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsZUFBZTtFQUNmLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLHlCQUF5QjtFQUN6Qiw4QkFBOEI7RUFDOUIsbUJBQW1CO0VBQ25CLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLFVBQVU7RUFDVixpQkFBaUI7QUFDbkI7QUFDQSxrQkFBa0I7O0FBRWxCO0VBQ0UseUJBQXlCLFlBQVksaUNBQWlDO0VBQ3RFLFlBQVk7RUFDWixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZiw2Q0FBNkM7RUFDN0MsMkRBQTJEO0FBQzdEOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDBCQUEwQjtBQUM1QjtBQUNBLDZDQUE2QztBQUM3QztFQUNFLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsYUFBYTtFQUNiLHlCQUF5QjtFQUN6QixtQkFBbUI7RUFDbkIseUNBQXlDO0VBQ3pDLCtCQUErQjtBQUNqQzs7QUFFQSwwQ0FBMEM7QUFDMUM7RUFDRSxzQkFBc0I7QUFDeEI7O0FBRUEsK0JBQStCO0FBQy9CO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLG1CQUFtQjtFQUNuQiwyQkFBMkI7QUFDN0I7O0FBRUEsaURBQWlEO0FBQ2pEO0VBQ0UsY0FBYztBQUNoQiIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xyXG4gIGZvbnQtZmFtaWx5OiBcIlNlZ29lIFVJXCIsIHNhbnMtc2VyaWY7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y5ZmFmYjtcclxuICBtYXJnaW46IDA7XHJcbiAgcGFkZGluZzogMjBweDtcclxufVxyXG5cclxuLmZvcm0tY29udGFpbmVyIHtcclxuICBtYXgtd2lkdGg6IDcwMHB4O1xyXG4gIG1hcmdpbjogYXV0bztcclxuICBiYWNrZ3JvdW5kOiB3aGl0ZTtcclxuICBib3JkZXItcmFkaXVzOiA4cHg7XHJcbiAgcGFkZGluZzogMnJlbTtcclxuICBib3gtc2hhZG93OiAwIDJweCAxMnB4IHJnYmEoMCwwLDAsMC4xKTtcclxufVxyXG5cclxuLmZvcm0tdGl0bGUge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBmb250LXNpemU6IDEuNXJlbTtcclxuICBtYXJnaW4tYm90dG9tOiAxLjVyZW07XHJcbn1cclxuXHJcbi5mb3JtLWdyb3VwIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgbWFyZ2luLWJvdHRvbTogMXJlbTtcclxufVxyXG5cclxuLmZvcm0tZ3JvdXAgbGFiZWwge1xyXG4gIGZvbnQtd2VpZ2h0OiA2MDA7XHJcbiAgbWFyZ2luLWJvdHRvbTogMC4zcmVtO1xyXG59XHJcblxyXG5pbnB1dFt0eXBlPVwibnVtYmVyXCJdIHtcclxuICBwYWRkaW5nOiAwLjVyZW07XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcclxuICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5zdWJtaXQtYnV0dG9uIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA3YmZmO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBwYWRkaW5nOiAwLjc1cmVtO1xyXG4gIGJvcmRlcjogbm9uZTtcclxuICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgZm9udC1zaXplOiAxcmVtO1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxuICBtYXJnaW4tdG9wOiAxcmVtO1xyXG59XHJcblxyXG4uc3VibWl0LWJ1dHRvbjpob3ZlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwNTZiMztcclxufVxyXG5cclxuLnJlc3VsdC1jYXJkIHtcclxuICBtYXJnaW4tdG9wOiAycmVtO1xyXG4gIHBhZGRpbmc6IDFyZW07XHJcbiAgYm9yZGVyOiAxcHggc29saWQgIzI4YTc0NTtcclxuICBib3JkZXItbGVmdDogNXB4IHNvbGlkICMyOGE3NDU7XHJcbiAgYmFja2dyb3VuZDogI2U2ZmZlZDtcclxuICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbn1cclxuXHJcbi5lcnJvciB7XHJcbiAgY29sb3I6IHJlZDtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG4vKiBtYWluc3R5bGUuY3NzICovXHJcblxyXG5idXR0b25bdHlwZT1cInN1Ym1pdFwiXSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI4YTc0NTsgICAgICAgICAgIC8qIEJvb3RzdHJhcC1saWtlIHN1Y2Nlc3MgZ3JlZW4gKi9cclxuICBjb2xvcjogd2hpdGU7XHJcbiAgYm9yZGVyOiBub25lO1xyXG4gIHBhZGRpbmc6IDEycHggMjRweDtcclxuICBmb250LXNpemU6IDE2cHg7XHJcbiAgZm9udC13ZWlnaHQ6IDYwMDtcclxuICBib3JkZXItcmFkaXVzOiA4cHg7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIGJveC1zaGFkb3c6IDAgNHB4IDEwcHggcmdiYSg0MCwgMTY3LCA2OSwgMC4yKTtcclxuICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIDAuM3MgZWFzZSwgdHJhbnNmb3JtIDAuMnMgZWFzZTtcclxufVxyXG5cclxuYnV0dG9uW3R5cGU9XCJzdWJtaXRcIl06aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyMTg4Mzg7XHJcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC0xcHgpO1xyXG59XHJcblxyXG5idXR0b25bdHlwZT1cInN1Ym1pdFwiXTphY3RpdmUge1xyXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xyXG59XHJcbi8qIENlbnRlciB0aGUgYXBwIGNvbnRhaW5lciBhbmQgYWRkIHBhZGRpbmcgKi9cclxuLmFwcC1jb250YWluZXIge1xyXG4gIG1heC13aWR0aDogODAwcHg7XHJcbiAgbWFyZ2luOiA1MHB4IGF1dG87XHJcbiAgcGFkZGluZzogMjBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjhmOWZhO1xyXG4gIGJvcmRlci1yYWRpdXM6IDEycHg7XHJcbiAgYm94LXNoYWRvdzogMCA4cHggMzBweCByZ2JhKDAsIDAsIDAsIDAuMSk7XHJcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuM3MgZWFzZTtcclxufVxyXG5cclxuLyogU21vb3RoIGhvdmVyIGFuaW1hdGlvbiBmb3IgZW50aXJlIGFwcCAqL1xyXG4uYXBwLWNvbnRhaW5lcjpob3ZlciB7XHJcbiAgdHJhbnNmb3JtOiBzY2FsZSgxLjAxKTtcclxufVxyXG5cclxuLyogQmVhdXRpZnVsIGNlbnRlcmVkIGhlYWRpbmcgKi9cclxuLmFwcC1jb250YWluZXIgaDEge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBmb250LXNpemU6IDIuMnJlbTtcclxuICBjb2xvcjogIzM0M2E0MDtcclxuICBmb250LXdlaWdodDogNzAwO1xyXG4gIG1hcmdpbi1ib3R0b206IDMwcHg7XHJcbiAgdHJhbnNpdGlvbjogY29sb3IgMC4zcyBlYXNlO1xyXG59XHJcblxyXG4vKiBTbGlnaHQgY29sb3IgY2hhbmdlIG9uIGhvdmVyIGZvciB0aGUgaGVhZGluZyAqL1xyXG4uYXBwLWNvbnRhaW5lcjpob3ZlciBoMSB7XHJcbiAgY29sb3I6ICMwMDdiZmY7XHJcbn1cclxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="app-container"><h1>Cervical Cancer Biopsy Prediction</h1><form class="form-container"><h2>🩺 Cervical Cancer Biopsy Prediction</h2><div class="form-group"><label>Age</label><input type="number" value="35" name="Age"></div><div class="form-group"><label>Number of sexual partners</label><input type="number" value="3" name="Number of sexual partners"></div><div class="form-group"><label>First sexual intercourse</label><input type="number" value="17" name="First sexual intercourse"></div><div class="form-group"><label>Num of pregnancies</label><input type="number" value="2" name="Num of pregnancies"></div><div class="form-group"><label>Smokes</label><input type="number" value="1" name="Smokes"></div><div class="form-group"><label>Smokes (years)</label><input type="number" value="5" name="Smokes (years)"></div><div class="form-group"><label>Smokes (packs/year)</label><input type="number" value="1" name="Smokes (packs/year)"></div><div class="form-group"><label>Hormonal Contraceptives</label><input type="number" value="1" name="Hormonal Contraceptives"></div><div class="form-group"><label>Hormonal Contraceptives (years)</label><input type="number" value="2" name="Hormonal Contraceptives (years)"></div><div class="form-group"><label>IUD</label><input type="number" value="0" name="IUD"></div><div class="form-group"><label>IUD (years)</label><input type="number" value="0" name="IUD (years)"></div><div class="form-group"><label>STDs</label><input type="number" value="1" name="STDs"></div><div class="form-group"><label>STDs:condylomatosis</label><input type="number" value="0" name="STDs:condylomatosis"></div><div class="form-group"><label>STDs:cervical condylomatosis</label><input type="number" value="0" name="STDs:cervical condylomatosis"></div><div class="form-group"><label>STDs:vaginal condylomatosis</label><input type="number" value="0" name="STDs:vaginal condylomatosis"></div><div class="form-group"><label>STDs:vulvo-perineal condylomatosis</label><input type="number" value="0" name="STDs:vulvo-perineal condylomatosis"></div><div class="form-group"><label>STDs:syphilis</label><input type="number" value="0" name="STDs:syphilis"></div><div class="form-group"><label>STDs:pelvic inflammatory disease</label><input type="number" value="0" name="STDs:pelvic inflammatory disease"></div><div class="form-group"><label>STDs:genital herpes</label><input type="number" value="0" name="STDs:genital herpes"></div><div class="form-group"><label>STDs:molluscum contagiosum</label><input type="number" value="0" name="STDs:molluscum contagiosum"></div><div class="form-group"><label>STDs:AIDS</label><input type="number" value="0" name="STDs:AIDS"></div><div class="form-group"><label>STDs:HIV</label><input type="number" value="0" name="STDs:HIV"></div><div class="form-group"><label>STDs:Hepatitis B</label><input type="number" value="0" name="STDs:Hepatitis B"></div><div class="form-group"><label>STDs:HPV</label><input type="number" value="0" name="STDs:HPV"></div><div class="form-group"><label>STDs: Time since first diagnosis</label><input type="number" value="1" name="STDs: Time since first diagnosis"></div><div class="form-group"><label>STDs: Time since last diagnosis</label><input type="number" value="1" name="STDs: Time since last diagnosis"></div><div class="form-group"><label>Dx:Cancer</label><input type="number" value="0" name="Dx:Cancer"></div><div class="form-group"><label>Dx:CIN</label><input type="number" value="0" name="Dx:CIN"></div><div class="form-group"><label>Dx:HPV</label><input type="number" value="0" name="Dx:HPV"></div><div class="form-group"><label>Dx</label><input type="number" value="0" name="Dx"></div><div class="form-group"><label>Hinselmann</label><input type="number" value="0" name="Hinselmann"></div><div class="form-group"><label>Schiller</label><input type="number" value="4" name="Schiller"></div><div class="form-group"><label>Citology</label><input type="number" value="0" name="Citology"></div><button type="submit">Predict</button><div class="result-card"><h3>✅ Prediction Result</h3><p><strong>Biopsy Prediction:</strong> Negative</p><p><strong>Confidence Score:</strong> 0.65</p></div></form></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
